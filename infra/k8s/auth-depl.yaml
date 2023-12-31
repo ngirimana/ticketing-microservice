@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: auth
-          image: docker.io/schadrack/auth
+          image: us.gcr.io/aiopspro/auth
 ---
 apiVersion: v1
 kind: Service

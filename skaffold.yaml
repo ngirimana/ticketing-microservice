@@ -5,10 +5,13 @@ deploy:
     manifests:
       - ./infra/k8s/*
 build:
-  local:
-    push: false
+  # local:
+  #   push: false
+  googleCloudBuild:
+    projectId: aiopspro
+
   artifacts:
-    - image: schadrack/auth
+    - image: us.gcr.io/aiopspro/auth
       context: auth
       docker:
         dockerfile: Dockerfile
