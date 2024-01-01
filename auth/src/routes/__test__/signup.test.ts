@@ -18,7 +18,7 @@ it('returns a 400 with an invalid email', async () => {
     const res= await request(app)
         .post('/api/users/signup')
         .send({
-            email: "testtest.com",
+            email: "test@",
             password: "password"
         })
         .expect(400);
