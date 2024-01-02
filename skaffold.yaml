@@ -27,3 +27,12 @@ build:
         manual:
           - src: '**/*.js'
             dest: .
+
+    - image: us.gcr.io/aiopspro/tickets
+      context: tickets
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: 'src/**/*.ts'
+            dest: .
