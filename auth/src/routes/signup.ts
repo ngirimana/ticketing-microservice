@@ -1,9 +1,9 @@
 import express, { Request, Response } from 'express';
 import { body } from 'express-validator';
 import Jwt from 'jsonwebtoken';
-import { validateRequest } from '../middlewares/validate-request';
+import { validateRequest,ConflictError } from '@ngirimanasc/common';
 import { User } from '../models/user';
-import { ConflictError } from './../errors/conflit-error';
+
 
 const router = express.Router();
 
