@@ -8,10 +8,10 @@ build:
   # local:
   #   push: false
   googleCloudBuild:
-    projectId: aiopspro
+    projectId: ticketing-410007
 
   artifacts:
-    - image: us.gcr.io/aiopspro/auth
+    - image: us.gcr.io/ticketing-410007/auth
       context: auth
       docker:
         dockerfile: Dockerfile
@@ -19,16 +19,17 @@ build:
         manual:
           - src: 'src/**/*.ts'
             dest: .
-    - image: us.gcr.io/aiopspro/client
+    - image: us.gcr.io/ticketing-410007/client
       context: client
       docker:
+
         dockerfile: Dockerfile
       sync:
         manual:
           - src: '**/*.js'
             dest: .
 
-    - image: us.gcr.io/aiopspro/tickets
+    - image: us.gcr.io/ticketing-410007/tickets
       context: tickets
       docker:
         dockerfile: Dockerfile
