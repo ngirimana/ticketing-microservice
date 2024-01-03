@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: client
-          image: us.gcr.io/aiopspro/client
+          image: us.gcr.io/ticketing-410007/client
 ---
 apiVersion: v1
 kind: Service

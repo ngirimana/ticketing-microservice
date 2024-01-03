@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: tickets
-          image: us.gcr.io/aiopspro/tickets
+          image: us.gcr.io/ticketing-410007/tickets
           env:
             - name: MONGO_URI
               value: 'mongodb://tickets-mongo-srv:27017/tickets'
